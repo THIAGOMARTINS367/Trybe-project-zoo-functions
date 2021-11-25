@@ -1,8 +1,8 @@
-const data = require("../data/zoo_data");
+const data = require('../data/zoo_data');
 
 function isManager(id) {
   // seu código aqui
-  let array = [];
+  const array = [];
   data.employees.forEach((element) => {
     array.push(...element.managers);
   });
@@ -11,7 +11,6 @@ function isManager(id) {
 }
 
 function getRelatedEmployees(managerId) {
-
   // seu código aqui
   let result;
   if (isManager(managerId) === true) {
