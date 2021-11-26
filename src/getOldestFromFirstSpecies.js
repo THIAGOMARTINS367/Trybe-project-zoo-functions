@@ -9,7 +9,7 @@ function getOldestFromFirstSpecies(id) {
   const employeeResponsibleForId = employees.find(
     (employee) => employee.id === id,
   ).responsibleFor[0];
-  const residents = species.find(
+  const [...residents] = species.find(
     (specieObject) => specieObject.id === employeeResponsibleForId,
   ).residents;
   let maior = 0;
