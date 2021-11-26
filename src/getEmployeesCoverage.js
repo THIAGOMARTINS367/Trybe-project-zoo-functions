@@ -62,6 +62,6 @@ function getEmployeesCoverage(information) {
     obj = getEmployeesCoverageElse(information);
   }
   return obj;
-};
+}
 
 module.exports = getEmployeesCoverage;
