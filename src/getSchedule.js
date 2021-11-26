@@ -1,7 +1,18 @@
 const data = require('../data/zoo_data');
 
+const getDayScheduleElse = (scheduleTarget, availableAnimals) => {
+  const string = `Open from ${data.hours[scheduleTarget].open}am until `;
+    const string2 = `${data.hours[scheduleTarget].close}pm`;
+    result = {
+      [scheduleTarget]: {
+        officeHour: string + string2,
+        exhibition: availableAnimals,
+      },
+    };
+  return result;
+};
+
 const getDaySchedule = (scheduleTarget) => {
-  // seu código aqui
   let result;
   const availableAnimals = data.species.filter((element) =>
     element.availability.includes(scheduleTarget)).map((element) => element.name);
@@ -13,14 +24,7 @@ const getDaySchedule = (scheduleTarget) => {
       },
     };
   } else {
-    const string = `Open from ${data.hours[scheduleTarget].open}am until `;
-    const string2 = `${data.hours[scheduleTarget].close}pm`;
-    result = {
-      [scheduleTarget]: {
-        officeHour: string + string2,
-        exhibition: availableAnimals,
-      },
-    };
+    result = getDayScheduleElse(scheduleTarget, availableAnimals);
   }
   return result;
 };

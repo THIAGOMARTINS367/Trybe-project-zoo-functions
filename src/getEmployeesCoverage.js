@@ -29,12 +29,11 @@ const getLocations = (idSpecies) => {
   return locations;
 };
 
+let employee;
+let responsibleFor2;
+let locations;
+let obj;
 function getEmployeesCoverage(information) {
-  // seu código aqui
-  let employee;
-  let responsibleFor2;
-  let locations;
-  let obj;
   if (information === undefined) {
     const employeesBase = data.employees.filter((objectEmployed) => objectEmployed.id);
     obj = [];
@@ -47,7 +46,13 @@ function getEmployeesCoverage(information) {
         locations });
     });
   } else {
-    employee = getEmployee(information);
+    obj = getEmployeesCoverageElse(information);
+  }
+  return obj;
+}
+
+const getEmployeesCoverageElse = (information) => {
+  employee = getEmployee(information);
     responsibleFor2 = getResponsibleFor(employee.responsibleFor);
     locations = getLocations(employee.responsibleFor);
     obj = {
@@ -56,8 +61,7 @@ function getEmployeesCoverage(information) {
       species: responsibleFor2,
       locations,
     };
-  }
-  return obj;
+  return obj
 }
 
 module.exports = getEmployeesCoverage;
