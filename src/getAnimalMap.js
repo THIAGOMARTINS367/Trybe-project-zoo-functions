@@ -49,9 +49,9 @@ const getAnimalMapElse = (sorted, sex) => {
 let objectResult;
 const getAnimalMapTrue = () => {
   species.forEach((element) => {
-    let a = data.species.filter((element2) => element2.location === element.location);
-    objectResult[element.location] = a
-      .map((element3) => element3.location === element.location ? element3.name : '');
+    const locations = data.species.filter((element2) => element2.location === element.location);
+    objectResult[element.location] = locations
+      .map((element3) => element3.name);
   });
 };
 
