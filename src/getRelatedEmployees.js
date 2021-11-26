@@ -6,7 +6,6 @@ function isManager(id) {
   data.employees.forEach((element) => {
     array.push(...element.managers);
   });
-
   return array.some((element) => element === id);
 }
 

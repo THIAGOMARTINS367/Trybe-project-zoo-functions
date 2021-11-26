@@ -32,13 +32,4 @@ function calculateEntry(entrants) {
   return entrantsClass.child * child + entrantsClass.adult * adult + entrantsClass.senior * senior;
 }
 
-const entrants = [
-  { name: 'thiago', age: 5 },
-  { name: 'thiago', age: 5 },
-  { name: 'thiago', age: 5 },
-  { name: 'thiago', age: 18 },
-  { name: 'thiago', age: 18 },
-  { name: 'thiago', age: 50 },
-];
-
 module.exports = { calculateEntry, countEntrants };

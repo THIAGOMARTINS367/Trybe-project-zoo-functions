@@ -1,10 +1,10 @@
-const data = require("../data/zoo_data");
+const data = require('../data/zoo_data');
 
 const getEmployee = (information) => {
   const { id = '', name = '' } = information;
   const zooEmployee = data.employees.find(
-    (element) => element.id === id 
-      || element.firstName === name 
+    (element) => element.id === id
+      || element.firstName === name
       || element.lastName === name,
   );
   if (zooEmployee === undefined) {
@@ -36,7 +36,7 @@ function getEmployeesCoverage(information) {
   let locations;
   let obj;
   if (information === undefined) {
-    const employeesBase = data.employees.filter((employee) => employee.id);
+    const employeesBase = data.employees.filter((objectEmployed) => objectEmployed.id);
     obj = [];
     employeesBase.forEach((element) => {
       responsibleFor2 = getResponsibleFor(element.responsibleFor);
@@ -44,7 +44,7 @@ function getEmployeesCoverage(information) {
       obj.push({ id: element.id,
         fullName: `${element.firstName} ${element.lastName}`,
         species: responsibleFor2,
-        locations, });
+        locations });
     });
   } else {
     employee = getEmployee(information);
@@ -56,7 +56,7 @@ function getEmployeesCoverage(information) {
       species: responsibleFor2,
       locations,
     };
-  };
+  }
   return obj;
 }
 
