@@ -27,8 +27,8 @@ function calculateEntry(entrants) {
   } else {
     entrantsVerified = entrants;
   }
-  let entrantsClass = countEntrants(entrantsVerified);
-  const { child, adult, senior } = data.prices
+  const entrantsClass = countEntrants(entrantsVerified);
+  const { child, adult, senior } = data.prices;
   return entrantsClass.child * child + entrantsClass.adult * adult + entrantsClass.senior * senior;
 }
 
@@ -40,7 +40,5 @@ const entrants = [
   { name: 'thiago', age: 18 },
   { name: 'thiago', age: 50 },
 ];
-
-console.log(calculateEntry(entrants))
 
 module.exports = { calculateEntry, countEntrants };

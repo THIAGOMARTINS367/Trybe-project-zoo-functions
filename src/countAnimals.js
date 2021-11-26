@@ -1,4 +1,4 @@
-const data = require("../data/zoo_data");
+const data = require('../data/zoo_data');
 
 function countAnimals(animal) {
   // seu código
@@ -7,7 +7,7 @@ function countAnimals(animal) {
     result = {};
     data.species.forEach((element) => {
       result[element.name] = data.species.find(
-        (element2) => element.name === element2.name
+        (element2) => element.name === element2.name,
       ).residents.length;
     });
   } else if (animal.specie !== undefined && animal.sex === undefined) {

@@ -13,8 +13,8 @@ const getDaySchedule = (scheduleTarget) => {
       },
     };
   } else {
-    const string = `Open from ${data.hours[scheduleTarget].open}am until ` 
-    const string2 = `${data.hours[scheduleTarget].close}pm`
+    const string = `Open from ${data.hours[scheduleTarget].open}am until `;
+    const string2 = `${data.hours[scheduleTarget].close}pm`;
     result = {
       [scheduleTarget]: {
         officeHour: string + string2,
@@ -23,7 +23,7 @@ const getDaySchedule = (scheduleTarget) => {
     };
   }
   return result;
-}
+};
 
 function getSchedule(scheduleTarget) {
   const days = Object.keys(data.hours);

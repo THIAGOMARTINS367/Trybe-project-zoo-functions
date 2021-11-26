@@ -4,10 +4,10 @@ const data = require('../data/zoo_data');
 function getOldestFromFirstSpecies(id) {
   // seu código aqui
   const employeeResponsibleForId = employees.find(
-    (employee) => employee.id === id
+    (employee) => employee.id === id,
   ).responsibleFor[0];
   const residents = data.species.find(
-    (specieObject) => specieObject.id === employeeResponsibleForId
+    (specieObject) => specieObject.id === employeeResponsibleForId,
   ).residents;
   let maior = 0;
   let animal;
