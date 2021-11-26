@@ -33,6 +33,19 @@ let employee;
 let responsibleFor2;
 let locations;
 let obj;
+const getEmployeesCoverageElse = (information) => {
+  employee = getEmployee(information);
+  responsibleFor2 = getResponsibleFor(employee.responsibleFor);
+  locations = getLocations(employee.responsibleFor);
+  obj = {
+    id: employee.id,
+    fullName: `${employee.firstName} ${employee.lastName}`,
+    species: responsibleFor2,
+    locations,
+  };
+  return obj;
+};
+
 function getEmployeesCoverage(information) {
   if (information === undefined) {
     const employeesBase = data.employees.filter((objectEmployed) => objectEmployed.id);
@@ -49,19 +62,6 @@ function getEmployeesCoverage(information) {
     obj = getEmployeesCoverageElse(information);
   }
   return obj;
-}
-
-const getEmployeesCoverageElse = (information) => {
-  employee = getEmployee(information);
-    responsibleFor2 = getResponsibleFor(employee.responsibleFor);
-    locations = getLocations(employee.responsibleFor);
-    obj = {
-      id: employee.id,
-      fullName: `${employee.firstName} ${employee.lastName}`,
-      species: responsibleFor2,
-      locations,
-    };
-  return obj
-}
+};
 
 module.exports = getEmployeesCoverage;
