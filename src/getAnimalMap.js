@@ -7,7 +7,7 @@ let animalNames = [];
 let arrayEspecie;
 let speciesByLocation;
 
-const getAnimalMapElse2_1 = (sorted, specie) => {
+const getAnimalMapElse2Point1 = (sorted, specie) => {
   if (sorted === true) {
     arrayEspecie[specie.name].sort();
   }
@@ -16,10 +16,9 @@ const getAnimalMapElse2_1 = (sorted, specie) => {
     result[specie.location] = [];
   }
   result[specie.location].push(arrayEspecie);
+};
 
-}
-
-const getAnimalMapElse2 = (sorted, specie, sex) => {//Refatore esta função para reduzir sua Complexidade Cognitiva de 9 para 5 permitidos.
+const getAnimalMapElse2 = (sorted, specie, sex) => {
   if (animalNames.includes(specie.name) === false) {
     arrayEspecie = { [specie.name]: specie.residents.map((element4) => {
       let animalSex;
@@ -28,7 +27,7 @@ const getAnimalMapElse2 = (sorted, specie, sex) => {//Refatore esta função par
       }
       return animalSex;
     }).filter((element3) => element3 !== undefined) };
-    getAnimalMapElse2_1(sorted, specie);
+    getAnimalMapElse2Point1(sorted, specie);
   }
 };
 
@@ -54,11 +53,11 @@ const getAnimalMapTrue = () => {
       .filter((element2) => element2.location === element.location)
       .map((element3) => element3.location === element.location ? element3.name : '');// função de seta usada ambiguamente com uma expressão condicional.
   });
-}
+};
 
-function getAnimalMap(options) {// Refatore esta função para reduzir sua Complexidade Cognitiva de 8 para 5 permitidos.
+let optionsVerified;
+function getAnimalMap(options) {
   objectResult = {};
-  let optionsVerified;
   if (options === undefined) {
     optionsVerified = {};
   } else {
@@ -66,12 +65,7 @@ function getAnimalMap(options) {// Refatore esta função para reduzir sua Compl
   }
   const { includeNames = false, sorted = false, sex = false } = optionsVerified;
   if (includeNames === false) {
-    getAnimalMapTrue()
-    // species.forEach((element) => {
-    //   objectResult[element.location] = data.species
-    //     .filter((element2) => element2.location === element.location)
-    //     .map((element3) => element3.location === element.location ? element3.name : '');// função de seta usada ambiguamente com uma expressão condicional.
-    // });
+    getAnimalMapTrue();
   } else {
     objectResult = getAnimalMapElse(sorted, sex);
   }
