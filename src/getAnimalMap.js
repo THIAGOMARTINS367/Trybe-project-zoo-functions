@@ -49,9 +49,9 @@ const getAnimalMapElse = (sorted, sex) => {
 let objectResult;
 const getAnimalMapTrue = () => {
   species.forEach((element) => {
-    objectResult[element.location] = data.species
-      .filter((element2) => element2.location === element.location)
-      .map((element3) => element3.location === element.location ? element3.name : '');// função de seta usada ambiguamente com uma expressão condicional.
+    let a = data.species.filter((element2) => element2.location === element.location);
+    objectResult[element.location] = a
+      .map((element3) => element3.location === element.location ? element3.name : '');
   });
 };
 
