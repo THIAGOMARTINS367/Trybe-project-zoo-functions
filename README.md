@@ -27,7 +27,6 @@ O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
   - [Dica para o desenvolvimento](#dica-para-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento (Opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [1. Implemente a função `getSpeciesByIds`](#1-implemente-a-função-getspeciesbyids)
   - [2. Implemente a função `getAnimalsOlderThan`](#2-implemente-a-função-getanimalsolderthan)
@@ -105,13 +104,13 @@ Você deverá completar as funções de forma a satisfazer os requisitos listado
   * Usando o exemplo anterior: `git push -u origin luiza-zoo-functions-project`
 
 7. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-017-project-zoo-functions/pulls)
+  * Vá até a página de _Pull Requests_ do repositório no GitHub
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-017-project-zoo-functions/pulls) e confira que o seu _Pull Request_ está criado.
+  * Volte até a página de _Pull Requests_ do repositório e confira que o seu _Pull Request_ está criado.
 
 ---
 
