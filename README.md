@@ -1,16 +1,12 @@
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
+## Descrição
 
-## Boas vindas ao repositório do projeto de ES6 e Higher Order Functions!
+Este projeto foi desenvolvido durante o período de Curso da Trybe 🚀
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #VQV 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+O projeto tem por objetivo a avaliação e prática dos conhecimentos adquiridos na Trybe, visando o cumprimento do requisitos solicitados pela mesma.
 
 ---
 
 ## Habilidades
-
-Neste projeto, verificamos se você é capaz de:
 
 - Produzir código legível, conciso e expressivo utilizando as novas funcionalidades do ES6;
 - Utilizar as _Higher Order Functions_ para manipular e criar arrays;
@@ -22,13 +18,11 @@ Neste projeto, verificamos se você é capaz de:
 
 ## Sumário
 
-- [Boas vindas ao repositório do projeto de ES6 e Higher Order Functions!](#boas-vindas-ao-repositório-do-projeto-de-es6-e-higher-order-functions)
 - [Habilidades](#habilidades)
 - [Sumário](#sumário)
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
@@ -45,10 +39,6 @@ Neste projeto, verificamos se você é capaz de:
   - [8. Implemente a função `getSchedule`](#8-implemente-a-função-getschedule)
   - [9. Implemente a função `getOldestFromFirstSpecies`](#9-implemente-a-função-getoldestfromfirstspecies)
   - [10. Implemente a função `getEmployeesCoverage`](#10-implemente-a-função-getemployeescoverage)
-- [Avisos Finais](#avisos-finais)
-  - [Revisando um Pull Request](#revisando-um-pull-request)
-  - [Avaliação do projeto](#avaliação-do-projeto)
-  - [Ordem dos requisitos no avaliador automático](#ordem-dos-requisitos-no-avaliador-automático)
 
 ---
 
@@ -73,14 +63,6 @@ Você deverá completar as funções de forma a satisfazer os requisitos listado
 **Por exemplo:** o arquivo `src/getSpeciesByIds.js` conterá a implementação da função `getSpeciesByIds` e o arquivo `tests/getSpeciesByIds.test.js` conterá os testes unitários referentes a ela.
 
 **Os arquivos que não estão indicados nos requisitos não devem ser alterados, ou sua avaliação poderá ser comprometida.**
-
----
-
-### Data de entrega
-
-- Projeto individual;
-- Serão 2 dias de projeto;
-- Data de entrega para avaliação final do projeto: `02/12/2021 - 14:00h`
 
 ---
 
@@ -157,17 +139,6 @@ Você deverá completar as funções de forma a satisfazer os requisitos listado
 ### Dica para o desenvolvimento
 
 Em sua vida de pessoa desenvolvedora, o pensamento algoritmico, processo de quebrar problemas complexos em pequenas partes para resolvê-los, ajudará a solucionar de maneira mais fácil os problemas complexos. Assim, uma boa forma de começar a desenvolver um projeto é lembrar que as funções são compostas por pequenos blocos de lógica que têm finalidade (função) específica. Ou seja, quebrar problemas grandes em menores tornará tudo mais simples de se entender e você sempre poderá reutilizar esses códigos em outras partes de sua aplicação.
-
-### Depois de terminar o desenvolvimento (Opcional)
-
-Para **"entregar"** seu projeto, siga os passos a seguir:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
-
-Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
 📌 **Lembre-se de garantir que todas as issues comentadas pelo eslint estão resolvidas**
 
@@ -488,27 +459,3 @@ Você pode ler mais sobre a [função construtora **Error**, neste link.](https:
 - Se o objeto de opções tiver a propriedade id, retorna somente a pessoa correspondente;
 - Sem parâmetros, retorna uma lista com a cobertura de todas as pessoas funcionárias;
 - Caso não haja nenhuma pessoa com o nome ou id especificados deverá ser lançado um error.
-
----
-
-## Avisos Finais
-
-### Revisando um Pull Request
-
-À medida que você e as outras pessoas que estudam na Trybe forem entregando os projetos, vocês receberão um alerta via Slack para também fazer a revisão dos Pull Requests dos seus colegas. Fiquem atentos às mensagens do "Pull Reminders" no Slack!
-
-Use o material que você já viu sobre [Code Review](https://app.betrybe.com/course/real-life-engineer/code-review) para te ajudar a revisar os projetos que chegaram para você.
-
----
-
-### Avaliação do projeto
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
-
-Link: [Formulário de avaliação de projeto](https://bit.ly/2OfLJPn)
-
----
-
-### Ordem dos requisitos no avaliador automático
-
-O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
